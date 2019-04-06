@@ -48,3 +48,6 @@ typings/
 # next.js build output
 .next
 out/
+
+# gatsby build output
+public/
