@@ -2,22 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import { createGlobalStyle } from "styled-components";
-import { normalize, modularScale } from "polished";
 
 import Header from "./header";
 import { Wrapper } from "./wrapper";
 
+import base from "../styles/base";
+import typography from "../styles/typography";
+
 // global styles for the site
 const GlobalStyle = createGlobalStyle`
-${normalize()}
-  body {
-    color: #333;
-    font-family: Georgia;
-  }
-
-  h1, h1, h3 {
-    font-family: "Helvetica Neue", sans-serif;
-  }
+  ${base}
+  ${typography}
 `;
 
 const Layout = ({ children }) => (
