@@ -39,9 +39,7 @@ const Layout = ({ children }) => (
           menuLinks={data.site.siteMetadata.menuLinks}
         />
         <div>
-          <main>
-            <Wrapper>{children}</Wrapper>
-          </main>
+          <main>{children}</main>
           <footer>
             <Wrapper>
               © {new Date().getFullYear()} {data.site.siteMetadata.author}

@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "JavaScript Everywhere",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Adam D. Scott",
   "dependencies": {
     "@mdx-js/mdx": "^0.20.3",
     "@mdx-js/tag": "^0.20.3",

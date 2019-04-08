@@ -3,13 +3,27 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { Hero } from "../components/hero";
+import { Wrapper } from "../components/wrapper";
 
 export default function Index({ data: { site, allMdx } }) {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <p>Welcome to JavaScript Everywhere.</p>
-      <h2>Recent Posts</h2>
+      <SEO
+        title="Home"
+        keywords={[
+          `book`,
+          `graphQL`,
+          `react`,
+          `apollo`,
+          `react native`,
+          `electron`
+        ]}
+      />
+      <Hero />
+      <Wrapper>
+        <p>Welcome to JavaScript Everywhere.</p>
+        {/* <h2>Recent Posts</h2>
       <ul>
         {allMdx.edges.map(({ node: post }) => (
           <li key={post.id}>
@@ -23,7 +37,8 @@ export default function Index({ data: { site, allMdx } }) {
             <p>{post.frontmatter.date}</p>
           </li>
         ))}
-      </ul>
+      </ul> */}
+      </Wrapper>
     </Layout>
   );
 }

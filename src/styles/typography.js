@@ -1,18 +1,40 @@
 import { css } from "styled-components";
-import { em } from "polished";
+import { fontFace, em } from "polished";
 
 import modularScale from "./modular-scale";
 
 const typography = css`
+  ${fontFace({
+    fontFamily: "Plex Regular",
+    fontFilePath: "../../fonts/ibmplexsans-regular-webfont"
+  })}
+
+  ${fontFace({
+    fontFamily: "Plex Bold",
+    fontWeight: "700",
+    fontFilePath: "../../fonts/ibmplexsans-bold-webfont"
+  })}
+
+  ${fontFace({
+    fontFamily: "Plex Medium",
+    fontWeight: "600",
+    fontFilePath: "../../fonts/ibmplexsans-medium-webfont"
+  })}
+
   @media screen and (min-width: 40em) {
     html {
-      font-size: ${em("18px")};
+      font-size: ${em("22px")};
+      line-height: 1.8;
     }
   }
 
   body {
-    line-height: 1.58;
-    font-family: "Georgia", serif;
+    line-height: 1.6;
+    font-family: "Plex Regular", "Times";
+  }
+
+  main {
+    color: rgb(33, 37, 41);
   }
 
   h1,
@@ -25,8 +47,9 @@ const typography = css`
     margin-top: 0;
     margin-bottom: 0.75em;
     font-weight: 500;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif; */
+    font-family: "Plex Bold", "Helvetica", "Arial", sans-serif;
   }
 
   h1 {
