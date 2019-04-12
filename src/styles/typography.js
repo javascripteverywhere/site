@@ -2,6 +2,7 @@ import { css } from "styled-components";
 import { fontFace, em } from "polished";
 
 import modularScale from "./modular-scale";
+import { theme } from "./theme.js";
 
 const typography = css`
   ${fontFace({
@@ -34,7 +35,7 @@ const typography = css`
   }
 
   main {
-    color: rgb(33, 37, 41);
+    color: ${theme.primary};
   }
 
   h1,
@@ -72,6 +73,22 @@ const typography = css`
     @media only screen and (min-width: 40rem) {
       font-size: ${modularScale(3)};
     }
+  }
+
+  a,
+  a:link
+  a:visited {
+    color: ${theme.primary};
+    text-decoration: none;
+    box-shadow: inset 0 -.5em 0 ${theme.accent};
+    transition: box-shadow .2s ease-in-out;
+  }
+
+  a:hover,
+  a:focus {
+    box-shadow: inset 0 -1.2em 0 ${theme.accent};
+    /* color: ${theme.primary};
+    background-size: 100% 88%; */
   }
 `;
 

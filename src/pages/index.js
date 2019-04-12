@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Hero } from "../components/hero";
+import { Book } from "../components/book";
 import { Wrapper } from "../components/wrapper";
 
 export default function Index({ data: { site, allMdx } }) {
@@ -21,8 +22,8 @@ export default function Index({ data: { site, allMdx } }) {
         ]}
       />
       <Hero />
+      <Book />
       <Wrapper>
-        <p>Welcome to JavaScript Everywhere.</p>
         {/* <h2>Recent Posts</h2>
       <ul>
         {allMdx.edges.map(({ node: post }) => (
