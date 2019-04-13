@@ -6,8 +6,8 @@ import { createGlobalStyle } from "styled-components";
 import Header from "./header";
 import { Wrapper } from "./wrapper";
 
-import base from "../styles/base";
-import typography from "../styles/typography";
+import base from "./styles/base";
+import typography from "./styles/typography";
 
 // global styles for the site
 const GlobalStyle = createGlobalStyle`

@@ -87,8 +87,6 @@ const typography = css`
   a:hover,
   a:focus {
     box-shadow: inset 0 -1.2em 0 ${theme.accent};
-    /* color: ${theme.primary};
-    background-size: 100% 88%; */
   }
 `;
 

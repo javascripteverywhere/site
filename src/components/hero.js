@@ -3,8 +3,8 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 import { Wrapper } from "./wrapper";
-import { theme } from "../styles/theme.js";
-import modularScale from "../styles/modular-scale";
+import { theme } from "./styles/theme.js";
+import modularScale from "./styles/modular-scale";
 
 const StyledHero = styled.div`
   background-color: ${theme.accent};

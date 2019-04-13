@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 import logo from "../images/logo.svg";
-import { theme } from "../styles/theme.js";
+import { theme } from "./styles/theme.js";
 import { Wrapper } from "./wrapper.js";
 import { Menu } from "./menu.js";
 

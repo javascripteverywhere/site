@@ -2,18 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 import { Wrapper } from "./wrapper";
+import { SectionHeading } from "./styles/section-heading";
 import Image from "./image";
 
 const BookSection = styled.section`
   padding: 2em 0;
 `;
 
-const SectionHeading = styled.h2`
+const BookHeading = styled(SectionHeading)`
   :before {
     content: "📚";
-  }
-  @media screen and (min-width: 50em) {
-    margin-left: -1em;
   }
 `;
 
@@ -58,10 +56,14 @@ const BookDescription = styled(Column)`
   }
 `;
 
+const Bump = styled.p`
+  margin-top: 3em;
+`;
+
 export const Book = () => (
   <BookSection>
     <Wrapper>
-      <SectionHeading>The Book</SectionHeading>
+      <BookHeading>The Book</BookHeading>
       <BookSub>
         <BookCover>
           <Image />
@@ -78,10 +80,10 @@ export const Book = () => (
             </span>
             ) by Adam D. Scott is slated for release in the Spring of 2020.
           </p>
-          <p>
+          <Bump>
             Read the in-progress draft with{" "}
             <a href="https://www.oreilly.com/">Safari Early Access</a>
-          </p>
+          </Bump>
         </BookDescription>
       </BookSub>
     </Wrapper>
