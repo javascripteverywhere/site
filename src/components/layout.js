@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import { createGlobalStyle } from "styled-components";
 
 import Header from "./header";
+import Footer from "./footer";
 import { Wrapper } from "./wrapper";
 
 import base from "./styles/base";
@@ -40,11 +41,7 @@ const Layout = ({ children }) => (
         />
         <div>
           <main>{children}</main>
-          <footer>
-            <Wrapper>
-              © {new Date().getFullYear()} {data.site.siteMetadata.author}
-            </Wrapper>
-          </footer>
+          <Footer author={data.site.siteMetadata.author} />
         </div>
       </div>
     )}
