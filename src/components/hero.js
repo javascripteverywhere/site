@@ -62,25 +62,6 @@ const Button = styled.a`
     `};
 `;
 
-// export const Hero = () => (
-//   <StyledHero>
-//     <Wrapper>
-//       <SiteTitle>JavaScript Everywhere</SiteTitle>
-//       <SubTitle>by Adam D. Scott</SubTitle>
-//       <TagLine>Learn to use JavaScript to build </TagLine>
-//       <Button href="#" primary>
-//         <span role="img" aria-label="Heart" tabindex="0">
-//           💖
-//         </span>{" "}
-//         Sign up for updates
-//       </Button>
-//       <Button href="https://spectrum.chat/jseverywhere">
-//         Join the Community
-//       </Button>
-//     </Wrapper>
-//   </StyledHero>
-// );
-
 export default class Hero extends React.Component {
   constructor(props) {
     super(props);
@@ -88,7 +69,7 @@ export default class Hero extends React.Component {
   }
 
   componentDidMount() {
-    this.topics = ["Web Apps", "Mobile Apps", "Desktop Apps", "Applications"];
+    this.topics = ["web apps", "mobile apps", "desktop apps", "applications"];
     this.counter = 0;
     this.timerID = setInterval(() => this.tick(), 1500);
   }
