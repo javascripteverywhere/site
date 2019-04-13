@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import Hero from "../components/hero";
 import { Book } from "../components/book";
 import { Topics } from "../components/topics";
+import Email from "../components/email";
 import { Wrapper } from "../components/wrapper";
 
 export default function Index({ data: { site, allMdx } }) {
@@ -27,6 +28,7 @@ export default function Index({ data: { site, allMdx } }) {
       <Hero />
       <Book />
       <Topics />
+      <Email />
       <Wrapper>
         {/* <h2>Recent Posts</h2>
       <ul>
