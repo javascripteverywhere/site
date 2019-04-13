@@ -62,21 +62,68 @@ const Button = styled.a`
     `};
 `;
 
-export const Hero = () => (
-  <StyledHero>
-    <Wrapper>
-      <SiteTitle>JavaScript Everywhere</SiteTitle>
-      <SubTitle>by Adam D. Scott</SubTitle>
-      <TagLine>Learn to use JavaScript to build GraphQL APIs</TagLine>
-      <Button href="#" primary>
-        <span role="img" aria-label="Heart" tabindex="0">
-          💖
-        </span>{" "}
-        Sign up for updates
-      </Button>
-      <Button href="https://spectrum.chat/jseverywhere">
-        Join the Community
-      </Button>
-    </Wrapper>
-  </StyledHero>
-);
+// export const Hero = () => (
+//   <StyledHero>
+//     <Wrapper>
+//       <SiteTitle>JavaScript Everywhere</SiteTitle>
+//       <SubTitle>by Adam D. Scott</SubTitle>
+//       <TagLine>Learn to use JavaScript to build </TagLine>
+//       <Button href="#" primary>
+//         <span role="img" aria-label="Heart" tabindex="0">
+//           💖
+//         </span>{" "}
+//         Sign up for updates
+//       </Button>
+//       <Button href="https://spectrum.chat/jseverywhere">
+//         Join the Community
+//       </Button>
+//     </Wrapper>
+//   </StyledHero>
+// );
+
+export default class Hero extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { text: "GraphQL APIs" };
+  }
+
+  componentDidMount() {
+    this.topics = ["Web Apps", "Mobile Apps", "Desktop Apps", "Applications"];
+    this.counter = 0;
+    this.timerID = setInterval(() => this.tick(), 1500);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick(text) {
+    if (this.counter < this.topics.length) {
+      this.setState({
+        text: this.topics[this.counter]
+      });
+      this.counter++;
+    }
+  }
+
+  render() {
+    return (
+      <StyledHero>
+        <Wrapper>
+          <SiteTitle>JavaScript Everywhere</SiteTitle>
+          <SubTitle>by Adam D. Scott</SubTitle>
+          <TagLine>Learn to use JavaScript to build {this.state.text}</TagLine>
+          <Button href="#" primary>
+            <span role="img" aria-label="Heart" tabindex="0">
+              💖
+            </span>{" "}
+            Sign up for updates
+          </Button>
+          <Button href="https://spectrum.chat/jseverywhere">
+            Join the Community
+          </Button>
+        </Wrapper>
+      </StyledHero>
+    );
+  }
+}
