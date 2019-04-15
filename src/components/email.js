@@ -29,6 +29,10 @@ const StyledEmail = styled.section`
     font-size: ${modularScale(2)};
   }
 
+  input {
+    line-height: 1.4em;
+  }
+
   input[type="email"] {
     padding: 6px;
     margin-right: 10px;
