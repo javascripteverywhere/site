@@ -95,7 +95,7 @@ export default class Hero extends React.Component {
           <SubTitle>by Adam D. Scott</SubTitle>
           <TagLine>Learn to use JavaScript to build {this.state.text}</TagLine>
           <Button href="#" primary>
-            <span role="img" aria-label="Heart" tabindex="0">
+            <span role="img" aria-label="Heart">
               💖
             </span>{" "}
             Sign up for updates

@@ -60,63 +60,66 @@ export const Topics = () => (
     <Wrapper>
       <TopicHeading>Topics Covered</TopicHeading>
       <p>
-        Ideal for developers who want to build <Highlight>cross-platform applications</Highlight> and ambitious beginners looking to <Highlight>bootstrap a business</Highlight>. Learn to build a full-stack, <Highlight>production ready</Highlight>{" "}
+        Ideal for developers who want to build{" "}
+        <Highlight>cross-platform applications</Highlight> and ambitious
+        beginners looking to <Highlight>bootstrap a business</Highlight>. Learn
+        to build a full-stack, <Highlight>production ready</Highlight>{" "}
         application with user accounts, using these technologies:
       </p>
       <TopicSub>
-      <Column>
-        <h3>
-          Server{" "}
-          <span role="img" aria-label="file cabinet" tabindex="0">
-            🗄️
-          </span>
-        </h3>
-        <ul>
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>Apollo-Server</li>
-          <li>MongoDB</li>
-        </ul>
+        <Column>
+          <h3>
+            Server{" "}
+            <span role="img" aria-label="file cabinet">
+              🗄️
+            </span>
+          </h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Apollo-Server</li>
+            <li>MongoDB</li>
+          </ul>
         </Column>
         <Column>
-        <h3>
-          Web{" "}
-          <span role="img" aria-label="laptop" tabindex="0">
-            💻
-          </span>
-        </h3>
-        <ul>
-          <li>React</li>
-          <li>Next.js</li>
-          <li>Apollo-Client</li>
-          <li>styled-components</li>
-        </ul>
+          <h3>
+            Web{" "}
+            <span role="img" aria-label="laptop">
+              💻
+            </span>
+          </h3>
+          <ul>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Apollo-Client</li>
+            <li>styled-components</li>
+          </ul>
         </Column>
         <Column>
-        <h3>
-          Mobile{" "}
-          <span role="img" aria-label="phone" tabindex="0">
-            🤳
-          </span>
-        </h3>
-        <ul>
-          <li>React Native</li>
-          <li>Expo</li>
-          <li>Apollo-Client</li>
-          <li>styled-components</li>
-        </ul>
+          <h3>
+            Mobile{" "}
+            <span role="img" aria-label="phone">
+              🤳
+            </span>
+          </h3>
+          <ul>
+            <li>React Native</li>
+            <li>Expo</li>
+            <li>Apollo-Client</li>
+            <li>styled-components</li>
+          </ul>
         </Column>
         <Column>
-        <h3>
-          Desktop{" "}
-          <span role="img" aria-label="file cabinet" tabindex="0">
-            🖥️
-          </span>
-        </h3>
-        <ul>
-          <li>Electron</li>
-          <li>electron-builder</li>
-        </ul>
+          <h3>
+            Desktop{" "}
+            <span role="img" aria-label="file cabinet">
+              🖥️
+            </span>
+          </h3>
+          <ul>
+            <li>Electron</li>
+            <li>electron-builder</li>
+          </ul>
         </Column>
       </TopicSub>
     </Wrapper>

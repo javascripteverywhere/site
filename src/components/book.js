@@ -75,7 +75,7 @@ export const Book = () => (
           <p>
             <em>JavaScript Everywhere</em> (also known as “the fancy pigeon
             book”{" "}
-            <span role="img" aria-label="Bird" tabindex="0">
+            <span role="img" aria-label="Bird">
               🐦
             </span>
             ) by Adam D. Scott is slated for release in the Spring of 2020.
