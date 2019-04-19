@@ -29,7 +29,6 @@ const TopicSub = styled.div`
     margin-left: -1em;
   }
   h3 {
-    font-size: 
     font-family: "Plex Medium";
     font-size: ${modularScale(1)};
     margin: 0.5em 0;
