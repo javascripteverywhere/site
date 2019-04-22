@@ -53,15 +53,19 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: `https://www.jseverywhere.io/icons/icon-512x512.png`
+          content: `https://www.jseverywhere.io/static/5120b041712340b6b6ac5133facdd792/fbe2f/cover.png`
         },
         {
           property: `og:image:width`,
-          content: `512px`
+          content: `300px`
         },
         {
           property: `og:image:height`,
-          content: `512px`
+          content: `394px`
+        },
+        {
+          property: `twitter:image:src`,
+          content: `https://www.jseverywhere.io/icons/icon-512x512.png`
         },
         {
           name: `twitter:card`,
