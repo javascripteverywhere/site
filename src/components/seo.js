@@ -52,12 +52,16 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`
         },
         {
+          property: `og:image`,
+          content: `https://www.jseverywhere.io/icons/icon-512x512.png`
+        },
+        {
           name: `twitter:card`,
           content: `summary`
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: `@adamdscott`
         },
         {
           name: `twitter:title`,
