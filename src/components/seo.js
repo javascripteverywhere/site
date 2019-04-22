@@ -53,15 +53,15 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: `https://www.jseverywhere.io/static/5120b041712340b6b6ac5133facdd792/fbe2f/cover.png`
+          content: `https://www.jseverywhere.io/icons/icon-512x512.png`
         },
         {
           property: `og:image:width`,
-          content: `300px`
+          content: `512px`
         },
         {
           property: `og:image:height`,
-          content: `394px`
+          content: `512px`
         },
         {
           property: `twitter:image:src`,
