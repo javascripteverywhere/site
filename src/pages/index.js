@@ -13,7 +13,7 @@ export default function Index({ data: { site, allMdx } }) {
   return (
     <Layout>
       <SEO
-        title="Home"
+        title="JavaScript Everywhere"
         keywords={[
           `book`,
           `node.js`,
