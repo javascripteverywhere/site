@@ -82,7 +82,9 @@ export const Book = () => (
           </p>
           <Bump>
             Read the in-progress draft with{" "}
-            <a href="https://www.oreilly.com/">Safari Early Access</a>
+            <a href="https://learning.oreilly.com/library/view/javascript-everywhere/9781492046974/">
+              Safari Early Access
+            </a>
           </Bump>
         </BookDescription>
       </BookSub>
