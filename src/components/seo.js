@@ -56,6 +56,14 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `https://www.jseverywhere.io/icons/icon-512x512.png`
         },
         {
+          property: `og:image:width`,
+          content: `512px`
+        },
+        {
+          property: `og:image:height`,
+          content: `512px`
+        },
+        {
           name: `twitter:card`,
           content: `summary`
         },
