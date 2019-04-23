@@ -94,7 +94,7 @@ export default class Hero extends React.Component {
           <SiteTitle>JavaScript Everywhere</SiteTitle>
           <SubTitle>by Adam D. Scott</SubTitle>
           <TagLine>Learn to use JavaScript to build {this.state.text}</TagLine>
-          <Button href="#" primary>
+          <Button href="#signup" primary>
             <span role="img" aria-label="Heart">
               💖
             </span>{" "}

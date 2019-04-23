@@ -64,7 +64,7 @@ const EmailHeading = styled.h2`
 `;
 
 const Email = () => (
-  <StyledEmail>
+  <StyledEmail id="email">
     <Wrapper>
       <EmailHeading>Join the Newsletter</EmailHeading>
       <p>Sign up to receive updates and exclusive content.</p>
@@ -74,6 +74,7 @@ const Email = () => (
         target="popupwindow"
         onsubmit="window.open('https://buttondown.email/jseverywhere', 'popupwindow')"
         class="embeddable-buttondown-form"
+        id="signup"
       >
         <label for="bd-email">Email</label>
         <StyledInputArea>
