@@ -62,8 +62,8 @@ export const Topics = () => (
         Ideal for developers who want to build{" "}
         <Highlight>cross-platform applications</Highlight> and ambitious
         beginners looking to <Highlight>bootstrap a business</Highlight>. Learn
-        to build a full-stack, <Highlight>production ready</Highlight>{" "}
-        application with user accounts, using these technologies:
+        to build full-stack applications with user accounts, using these
+        technologies:
       </p>
       <TopicSub>
         <Column>
@@ -89,9 +89,8 @@ export const Topics = () => (
           </h3>
           <ul>
             <li>React</li>
-            <li>Next.js</li>
             <li>Apollo-Client</li>
-            <li>styled-components</li>
+            <li>Emotion.js</li>
           </ul>
         </Column>
         <Column>
@@ -105,7 +104,6 @@ export const Topics = () => (
             <li>React Native</li>
             <li>Expo</li>
             <li>Apollo-Client</li>
-            <li>styled-components</li>
           </ul>
         </Column>
         <Column>
