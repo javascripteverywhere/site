@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Wrapper } from "../components/wrapper";
 
-export default function About() {
+const About = () => {
   return (
     <Layout>
       <SEO
@@ -23,4 +23,6 @@ export default function About() {
       </Wrapper>
     </Layout>
   );
-}
+};
+
+export default About;

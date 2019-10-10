@@ -12,12 +12,14 @@ const StyledFooter = styled.footer`
   font-size: 0.75em;
 `;
 
-const Footer = ({ author }) => (
-  <StyledFooter>
-    <Wrapper>
-      © {new Date().getFullYear()} {author}
-    </Wrapper>
-  </StyledFooter>
-);
+const Footer = ({ author }) => {
+  return (
+    <StyledFooter>
+      <Wrapper>
+        © {new Date().getFullYear()} {author}
+      </Wrapper>
+    </StyledFooter>
+  );
+};
 
 export default Footer;

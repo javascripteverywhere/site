@@ -63,28 +63,30 @@ const EmailHeading = styled.h2`
   margin-bottom: 0;
 `;
 
-const Email = () => (
-  <StyledEmail id="email">
-    <Wrapper>
-      <EmailHeading>Join the Newsletter</EmailHeading>
-      <p>Sign up to receive updates and exclusive content.</p>
-      <form
-        action="https://buttondown.email/api/emails/embed-subscribe/jseverywhere"
-        method="post"
-        target="popupwindow"
-        onsubmit="window.open('https://buttondown.email/jseverywhere', 'popupwindow')"
-        class="embeddable-buttondown-form"
-        id="signup"
-      >
-        <label for="bd-email">Email</label>
-        <StyledInputArea>
-          <input type="email" name="email" id="bd-email" />
-          <input type="hidden" value="1" name="embed" />
-          <input type="submit" value="Subscribe" />
-        </StyledInputArea>
-      </form>
-    </Wrapper>
-  </StyledEmail>
-);
+const Email = () => {
+  return (
+    <StyledEmail id="email">
+      <Wrapper>
+        <EmailHeading>Join the Newsletter</EmailHeading>
+        <p>Sign up to receive updates and exclusive content.</p>
+        <form
+          action="https://buttondown.email/api/emails/embed-subscribe/jseverywhere"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.email/jseverywhere', 'popupwindow')"
+          class="embeddable-buttondown-form"
+          id="signup"
+        >
+          <label for="bd-email">Email</label>
+          <StyledInputArea>
+            <input type="email" name="email" id="bd-email" />
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" value="Subscribe" />
+          </StyledInputArea>
+        </form>
+      </Wrapper>
+    </StyledEmail>
+  );
+};
 
 export default Email;

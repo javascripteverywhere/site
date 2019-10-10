@@ -1,7 +1,7 @@
-import { Link } from "gatsby";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 
+import useInterval from "../lib/useInterval";
 import { Wrapper } from "./wrapper";
 import { theme } from "./styles/theme.js";
 import modularScale from "./styles/modular-scale";
@@ -62,49 +62,37 @@ const Button = styled.a`
     `};
 `;
 
-export default class Hero extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { text: "GraphQL APIs" };
-  }
+const Hero = () => {
+  const [text, setText] = useState("GraphQL APIs");
+  const [count, setCount] = useState(0);
 
-  componentDidMount() {
-    this.topics = ["web apps", "mobile apps", "desktop apps", "applications"];
-    this.counter = 0;
-    this.timerID = setInterval(() => this.tick(), 1500);
-  }
+  const topics = ["web apps", "mobile apps", "desktop apps", "applications"];
 
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick(text) {
-    if (this.counter < this.topics.length) {
-      this.setState({
-        text: this.topics[this.counter]
-      });
-      this.counter++;
+  useInterval(() => {
+    if (count < topics.length) {
+      setText(topics[count]);
     }
-  }
+    setCount(count + 1);
+  }, 1500);
 
-  render() {
-    return (
-      <StyledHero>
-        <Wrapper>
-          <SiteTitle>JavaScript Everywhere</SiteTitle>
-          <SubTitle>by Adam D. Scott</SubTitle>
-          <TagLine>Learn to use JavaScript to build {this.state.text}</TagLine>
-          <Button href="#signup" primary>
-            <span role="img" aria-label="Heart">
-              💖
-            </span>{" "}
-            Sign up for updates
-          </Button>
-          <Button href="https://spectrum.chat/jseverywhere">
-            Join the Community
-          </Button>
-        </Wrapper>
-      </StyledHero>
-    );
-  }
-}
+  return (
+    <StyledHero>
+      <Wrapper>
+        <SiteTitle>JavaScript Everywhere</SiteTitle>
+        <SubTitle>by Adam D. Scott</SubTitle>
+        <TagLine>Learn to use JavaScript to build {text}</TagLine>
+        <Button href="#signup" primary>
+          <span role="img" aria-label="Heart">
+            💖
+          </span>{" "}
+          Sign up for updates
+        </Button>
+        <Button href="https://spectrum.chat/jseverywhere">
+          Join the Community
+        </Button>
+      </Wrapper>
+    </StyledHero>
+  );
+};
+
+export default Hero;

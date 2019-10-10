@@ -16,37 +16,41 @@ const GlobalStyle = createGlobalStyle`
   ${typography}
 `;
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteInfoQuery {
-        site {
-          siteMetadata {
-            title
-            author
-            menuLinks {
-              name
-              link
-            }
-          }
+const siteInfo = graphql`
+  query SiteInfoQuery {
+    site {
+      siteMetadata {
+        title
+        author
+        menuLinks {
+          name
+          link
         }
       }
-    `}
-    render={data => (
-      <div>
-        <GlobalStyle />
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          menuLinks={data.site.siteMetadata.menuLinks}
-        />
+    }
+  }
+`;
+
+const Layout = ({ children }) => {
+  return (
+    <StaticQuery
+      query={siteInfo}
+      render={data => (
         <div>
-          <main>{children}</main>
-          <Footer author={data.site.siteMetadata.author} />
+          <GlobalStyle />
+          <Header
+            siteTitle={data.site.siteMetadata.title}
+            menuLinks={data.site.siteMetadata.menuLinks}
+          />
+          <div>
+            <main>{children}</main>
+            <Footer author={data.site.siteMetadata.author} />
+          </div>
         </div>
-      </div>
-    )}
-  />
-);
+      )}
+    />
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired

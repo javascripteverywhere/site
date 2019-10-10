@@ -32,20 +32,22 @@ const StyledNav = styled.nav`
   }
 `;
 
-export const Menu = ({ menuLinks }) => (
-  <StyledNav>
-    <ul>
-      {menuLinks.map(link => (
-        <li key={link.name}>
-          <Link to={link.link}>{link.name}</Link>
+export const Menu = ({ menuLinks }) => {
+  return (
+    <StyledNav>
+      <ul>
+        {menuLinks.map(link => (
+          <li key={link.name}>
+            <Link to={link.link}>{link.name}</Link>
+          </li>
+        ))}
+        <li>
+          <a href="https://github.com/javascripteverywhere/">GitHub</a>
         </li>
-      ))}
-      <li>
-        <a href="https://github.com/javascripteverywhere/">GitHub</a>
-      </li>
-      <li>
-        <a href="https://spectrum.chat/jseverywhere">Spectrum</a>
-      </li>
-    </ul>
-  </StyledNav>
-);
+        <li>
+          <a href="https://spectrum.chat/jseverywhere">Spectrum</a>
+        </li>
+      </ul>
+    </StyledNav>
+  );
+};

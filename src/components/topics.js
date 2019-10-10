@@ -54,71 +54,75 @@ const Column = styled.div`
   }
 `;
 
-export const Topics = () => (
-  <TopicSection>
-    <Wrapper>
-      <TopicHeading>Topics Covered</TopicHeading>
-      <p>
-        Ideal for developers who want to build{" "}
-        <Highlight>cross-platform applications</Highlight> and ambitious
-        beginners looking to <Highlight>bootstrap a business</Highlight>. Learn
-        to build full-stack applications with user accounts, using these
-        technologies:
-      </p>
-      <TopicSub>
-        <Column>
-          <h3>
-            Server{" "}
-            <span role="img" aria-label="file cabinet">
-              🗄️
-            </span>
-          </h3>
-          <ul>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Apollo-Server</li>
-            <li>MongoDB</li>
-          </ul>
-        </Column>
-        <Column>
-          <h3>
-            Web{" "}
-            <span role="img" aria-label="laptop">
-              💻
-            </span>
-          </h3>
-          <ul>
-            <li>React</li>
-            <li>Apollo-Client</li>
-            <li>Emotion.js</li>
-          </ul>
-        </Column>
-        <Column>
-          <h3>
-            Mobile{" "}
-            <span role="img" aria-label="phone">
-              🤳
-            </span>
-          </h3>
-          <ul>
-            <li>React Native</li>
-            <li>Expo</li>
-            <li>Apollo-Client</li>
-          </ul>
-        </Column>
-        <Column>
-          <h3>
-            Desktop{" "}
-            <span role="img" aria-label="file cabinet">
-              🖥️
-            </span>
-          </h3>
-          <ul>
-            <li>Electron</li>
-            <li>electron-builder</li>
-          </ul>
-        </Column>
-      </TopicSub>
-    </Wrapper>
-  </TopicSection>
-);
+const Topics = () => {
+  return (
+    <TopicSection>
+      <Wrapper>
+        <TopicHeading>Topics Covered</TopicHeading>
+        <p>
+          Ideal for developers who want to build{" "}
+          <Highlight>cross-platform applications</Highlight> and ambitious
+          beginners looking to <Highlight>bootstrap a business</Highlight>.
+          Learn to build full-stack applications with user accounts, using these
+          technologies:
+        </p>
+        <TopicSub>
+          <Column>
+            <h3>
+              Server{" "}
+              <span role="img" aria-label="file cabinet">
+                🗄️
+              </span>
+            </h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Apollo-Server</li>
+              <li>MongoDB</li>
+            </ul>
+          </Column>
+          <Column>
+            <h3>
+              Web{" "}
+              <span role="img" aria-label="laptop">
+                💻
+              </span>
+            </h3>
+            <ul>
+              <li>React</li>
+              <li>Apollo-Client</li>
+              <li>Styled-Components</li>
+            </ul>
+          </Column>
+          <Column>
+            <h3>
+              Mobile{" "}
+              <span role="img" aria-label="phone">
+                🤳
+              </span>
+            </h3>
+            <ul>
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Apollo-Client</li>
+            </ul>
+          </Column>
+          <Column>
+            <h3>
+              Desktop{" "}
+              <span role="img" aria-label="file cabinet">
+                🖥️
+              </span>
+            </h3>
+            <ul>
+              <li>Electron</li>
+              <li>Electron-Builder</li>
+            </ul>
+          </Column>
+        </TopicSub>
+      </Wrapper>
+    </TopicSection>
+  );
+};
+
+export default Topics;

@@ -6,7 +6,7 @@ import styled from "styled-components";
 import logo from "../images/logo.svg";
 import { theme } from "./styles/theme.js";
 import { Wrapper } from "./wrapper.js";
-import { Menu } from "./menu.js";
+import Menu from "./menu.js";
 
 const StyledHeader = styled.header`
   background-color: ${theme.accent};
@@ -17,16 +17,18 @@ const Logo = styled.div`
   flex: 1;
 `;
 
-const Header = ({ siteTitle, menuLinks }) => (
-  <StyledHeader>
-    <Logo>
-      <Link to="/">
-        <img src={logo} alt="JavaScript Everywhere Logo" height="50" />
-      </Link>
-    </Logo>
-    {/* <Menu menuLinks={menuLinks} /> */}
-  </StyledHeader>
-);
+const Header = ({ siteTitle, menuLinks }) => {
+  return (
+    <StyledHeader>
+      <Logo>
+        <Link to="/">
+          <img src={logo} alt="JavaScript Everywhere Logo" height="50" />
+        </Link>
+      </Logo>
+      {/* <Menu menuLinks={menuLinks} /> */}
+    </StyledHeader>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string
