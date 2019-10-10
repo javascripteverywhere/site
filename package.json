@@ -5,14 +5,14 @@
   "version": "0.1.0",
   "author": "Adam D. Scott",
   "dependencies": {
-    "@mdx-js/mdx": "^0.20.3",
+    "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/tag": "^0.20.3",
     "gatsby": "^2.3.5",
     "gatsby-image": "^2.0.37",
-    "gatsby-mdx": "^0.4.4",
+    "gatsby-mdx": "^1.0.0",
     "gatsby-plugin-fathom": "^1.0.4",
     "gatsby-plugin-manifest": "^2.0.26",
-    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-offline": "^3.0.13",
     "gatsby-plugin-react-helmet": "^3.0.11",
     "gatsby-plugin-sharp": "^2.0.32",
     "gatsby-plugin-sitemap": "^2.0.11",
@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.0",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.16.4"
   },
