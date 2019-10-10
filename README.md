@@ -1,5 +1,7 @@
 # jseverywherebook.com
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/javascripteverywhere/site.svg)](https://greenkeeper.io/)
+
 > Source code for [jseverywherebook.com](https://jseverywherebook.com/). Built with [Gatsby](https://www.gatsbyjs.org/).
 
 ## Getting Started
