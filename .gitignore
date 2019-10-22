@@ -51,3 +51,6 @@ out/
 
 # gatsby build output
 public/
+
+# VSCode settings
+.vscode
