@@ -1,6 +1,6 @@
-# jseverywherebook.com
+# jseverywhere.io
 
-** This is the source code for the [jseverywhere.io](https://www.jseverywhere.io) website. If you are looking for the book's code examples, visit [github.com/javascripteverywhere](https://github.com/javascripteverywhere).**
+**This is the source code for the [jseverywhere.io](https://www.jseverywhere.io) website. If you are looking for the book's code examples, visit [github.com/javascripteverywhere](https://github.com/javascripteverywhere).**
 
 
 ## Getting Started
