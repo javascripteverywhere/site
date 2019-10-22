@@ -1,6 +1,7 @@
 # jseverywherebook.com
 
-> Source code for [jseverywherebook.com](https://jseverywherebook.com/). Built with [Gatsby](https://www.gatsbyjs.org/).
+** This is the source code for the [jseverywhere.io](https://www.jseverywhere.io) website. If you are looking for the book's code examples, visit [github.com/javascripteverywhere](https://github.com/javascripteverywhere).**
+
 
 ## Getting Started
 
@@ -28,10 +29,6 @@ To build the site for static site deployment run
 npm run build
 ```
 
-## Getting Help
-
-If you have questions or need further guidance on using this template, please [file an issue](https://github.com/ascott1/readme-template/issues). I will do my best to respond to all issues in a timely manner.
-
 ## Contributing Guidelines
 
 All contributions and suggestions are welcome!
@@ -51,7 +48,7 @@ This project pledges to follow the [Contributor's Covenant](http://contributor-c
 
 The MIT License (MIT)
 
-Copyright 2018-present Adam D. Scott
+Copyright 2019-present Adam D. Scott
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
