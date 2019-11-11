@@ -9,7 +9,7 @@
     "@mdx-js/tag": "^0.20.3",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
-    "gatsby-mdx": "^0.4.4",
+    "gatsby-mdx": "^1.0.0",
     "gatsby-plugin-fathom": "^1.1.0",
     "gatsby-plugin-manifest": "^2.0.26",
     "gatsby-plugin-offline": "^2.0.25",
