@@ -66,7 +66,7 @@ const Hero = () => {
   const [text, setText] = useState("GraphQL APIs");
   const [count, setCount] = useState(0);
 
-  const topics = ["web apps", "mobile apps", "desktop apps", "applications"];
+  const topics = ["web apps", "mobile apps", "desktop apps", "applications 🙌"];
 
   useInterval(() => {
     if (count < topics.length) {
@@ -81,11 +81,11 @@ const Hero = () => {
         <SiteTitle>JavaScript Everywhere</SiteTitle>
         <SubTitle>by Adam D. Scott</SubTitle>
         <TagLine>Learn to use JavaScript to build {text}</TagLine>
-        <Button href="#signup" primary>
-          <span role="img" aria-label="Heart">
-            💖
+        <Button href="https://www.amazon.com/dp/1492046981" primary>
+          <span role="img" aria-label="shopping bags">
+            🛍️
           </span>{" "}
-          Sign up for updates
+          Buy the book
         </Button>
         <Button href="https://spectrum.chat/jseverywhere">
           Join the Community

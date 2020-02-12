@@ -45,6 +45,10 @@ const BookDescription = styled(Column)`
     padding-left: 0.5em;
   }
 
+  p:first-child {
+    margin-top: 0;
+  }
+
   h3 {
     font-size: 1.2em;
 
@@ -70,21 +74,20 @@ const Book = () => {
             <Image />
           </BookCover>
           <BookDescription>
-            <h3>
-              Coming from O’Reilly <span>Spring 2020</span>
-            </h3>
             <p>
               <em>JavaScript Everywhere</em> (also known as “the fancy pigeon
               book”{" "}
               <span role="img" aria-label="Bird">
                 🐦
               </span>
-              ) by Adam D. Scott is slated for release in the Spring of 2020.
+              ) by Adam D. Scott covers building real-world applications with
+              technologies such as Node.js, GraphQL, React, React Native, and
+              Electron.
             </p>
             <Bump>
-              Read the in-progress draft with{" "}
+              <a href="">Buy the book</a> or read it with{" "}
               <a href="https://learning.oreilly.com/library/view/javascript-everywhere/9781492046974/">
-                Safari Early Access
+                O'Reilly Online Learning
               </a>
             </Bump>
           </BookDescription>

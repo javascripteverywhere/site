@@ -31,7 +31,7 @@ const siteInfo = graphql`
   }
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, footer }) => {
   return (
     <StaticQuery
       query={siteInfo}
@@ -44,7 +44,9 @@ const Layout = ({ children }) => {
           />
           <div>
             <main>{children}</main>
-            <Footer author={data.site.siteMetadata.author} />
+            {footer !== "false" && (
+              <Footer author={data.site.siteMetadata.author} />
+            )}
           </div>
         </div>
       )}

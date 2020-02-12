@@ -10,11 +10,23 @@ import Menu from "./menu.js";
 
 const StyledHeader = styled.header`
   background-color: ${theme.accent};
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+
+  @media screen and (min-width: 40em) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 const Logo = styled.div`
-  flex: 1;
+  margin-left: 5%;
+`;
+
+const Title = styled.h1`
+  font-size: 1rem;
+  display: inline;
 `;
 
 const Header = ({ siteTitle, menuLinks }) => {
@@ -25,6 +37,7 @@ const Header = ({ siteTitle, menuLinks }) => {
           <img src={logo} alt="JavaScript Everywhere Logo" height="50" />
         </Link>
       </Logo>
+      <Menu />
       {/* <Menu menuLinks={menuLinks} /> */}
     </StyledHeader>
   );
