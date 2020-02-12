@@ -3,6 +3,7 @@ module.exports = {
     title: `JavaScript Everywhere`,
     description: `Building cross-platform applications with JavaScript`,
     author: `Adam D. Scott`,
+    siteUrl: `https://www.jseverywhere.io`,
     menuLinks: [
       {
         name: "About",
