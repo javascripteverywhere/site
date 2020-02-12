@@ -7,19 +7,22 @@ import { theme } from "./theme.js";
 const typography = css`
   ${fontFace({
     fontFamily: "Plex Regular",
-    fontFilePath: "../../fonts/ibmplexsans-regular-webfont"
+    fontFilePath: "../../fonts/ibmplexsans-regular-webfont",
+    fontDisplay: "swap"
   })}
 
   ${fontFace({
     fontFamily: "Plex Bold",
     fontWeight: "700",
-    fontFilePath: "../../fonts/ibmplexsans-bold-webfont"
+    fontFilePath: "../../fonts/ibmplexsans-bold-webfont",
+    fontDisplay: "swap"
   })}
 
   ${fontFace({
     fontFamily: "Plex Medium",
     fontWeight: "600",
-    fontFilePath: "../../fonts/ibmplexsans-medium-webfont"
+    fontFilePath: "../../fonts/ibmplexsans-medium-webfont",
+    fontDisplay: "swap"
   })}
 
   @media screen and (min-width: 40em) {
