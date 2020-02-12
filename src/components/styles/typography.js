@@ -1,29 +1,37 @@
 import { css } from "styled-components";
-import { fontFace, em } from "polished";
+import { em } from "polished";
 
 import modularScale from "./modular-scale";
 import { theme } from "./theme.js";
 
 const typography = css`
-  ${fontFace({
-    fontFamily: "Plex Regular",
-    fontFilePath: "../../fonts/ibmplexsans-regular-webfont",
-    fontDisplay: "swap"
-  })}
+  @font-face {
+    font-family: "Plex Regular";
+    src: url("./../fonts/ibmplexsans-regular-webfont.woff2") format("woff2"),
+      url("./../fonts/ibmplexsans-regular-webfont.woff") format("woff");
+    font-display: "swap";
+  }
 
-  ${fontFace({
-    fontFamily: "Plex Bold",
-    fontWeight: "700",
-    fontFilePath: "../../fonts/ibmplexsans-bold-webfont",
-    fontDisplay: "swap"
-  })}
+  @font-face {
+    font-family: "Plex Bold";
+    src: url("./../fonts/ibmplexsans-bold-webfont.woff2") format("woff2"),
+      url("./../fonts/ibmplexsans-bold-webfont.woff") format("woff");
+    font-display: "swap";
+  }
 
-  ${fontFace({
-    fontFamily: "Plex Medium",
-    fontWeight: "600",
-    fontFilePath: "../../fonts/ibmplexsans-medium-webfont",
-    fontDisplay: "swap"
-  })}
+  @font-face {
+    font-family: "Plex Medium";
+    src: url("./../fonts/ibmplexsans-medium-webfont.woff2") format("woff2"),
+      url("./../fonts/ibmplexsans-medium-webfont.woff") format("woff");
+    font-display: "swap";
+  }
+
+  @font-face {
+    font-family: "Plex Regular";
+    src: url("./../fonts/ibmplexsans-regular-webfont.woff2") format("woff2"),
+      url("./../fonts/ibmplexsans-regular-webfont.woff") format("woff");
+    font-display: "swap";
+  }
 
   @media screen and (min-width: 40em) {
     html {
@@ -51,9 +59,8 @@ const typography = css`
     margin-top: 0;
     margin-bottom: 0.75em;
     font-weight: 500;
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif; */
-    font-family: "Plex Bold", "Helvetica", "Arial", sans-serif;
+    font-family: "Plex Bold", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif;
   }
 
   h1 {
@@ -79,12 +86,11 @@ const typography = css`
   }
 
   a,
-  a:link
-  a:visited {
+  a:link a:visited {
     color: ${theme.primary};
     text-decoration: none;
-    box-shadow: inset 0 -.5em 0 ${theme.accent};
-    transition: box-shadow .2s ease-in-out;
+    box-shadow: inset 0 -0.5em 0 ${theme.accent};
+    transition: box-shadow 0.2s ease-in-out;
   }
 
   a:hover,
