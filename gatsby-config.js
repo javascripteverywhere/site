@@ -43,15 +43,6 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-fathom",
-      options: {
-        // your Fathom server URL
-        trackingUrl: "stats.adamdscott.com",
-        // unique site id (optional, required for Fathom v1.1.0+)
-        siteId: "FSTGT"
-      }
-    },
-    {
       resolve: `gatsby-mdx`,
       options: {
         extensions: [".mdx", ".md"],
