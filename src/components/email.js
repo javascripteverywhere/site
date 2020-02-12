@@ -64,6 +64,10 @@ const EmailHeading = styled.h2`
 `;
 
 const Email = () => {
+  const handleSubmit = event => {
+    window.open("https://buttondown.email/jseverywhere", "popupwindow");
+  };
+
   return (
     <StyledEmail id="email">
       <Wrapper>
@@ -73,11 +77,11 @@ const Email = () => {
           action="https://buttondown.email/api/emails/embed-subscribe/jseverywhere"
           method="post"
           target="popupwindow"
-          onsubmit="window.open('https://buttondown.email/jseverywhere', 'popupwindow')"
-          class="embeddable-buttondown-form"
+          onSubmit={handleSubmit}
+          className="embeddable-buttondown-form"
           id="signup"
         >
-          <label for="bd-email">Email</label>
+          <label htmlFor="bd-email">Email</label>
           <StyledInputArea>
             <input type="email" name="email" id="bd-email" />
             <input type="hidden" value="1" name="embed" />
