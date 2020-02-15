@@ -19,9 +19,12 @@
     "gatsby-transformer-sharp": "^2.1.17",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
+    "query-string": "^6.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
+    "react-modal": "^3.11.1",
+    "react-spinners": "^0.8.0",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {

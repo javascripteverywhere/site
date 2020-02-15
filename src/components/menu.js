@@ -50,9 +50,6 @@ const Menu = ({ menuLinks }) => {
         <li>
           <a href="https://spectrum.chat/jseverywhere">Community</a>
         </li>
-        <li>
-          <a href="#bd-email">Newsletter</a>
-        </li>
       </ul>
     </StyledNav>
   );

@@ -87,9 +87,6 @@ const Hero = () => {
           </span>{" "}
           Buy the book
         </Button>
-        <Button href="https://spectrum.chat/jseverywhere">
-          Join the Community
-        </Button>
       </Wrapper>
     </StyledHero>
   );
