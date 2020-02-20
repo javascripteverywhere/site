@@ -6,6 +6,7 @@ import Hero from "../components/hero";
 import Book from "../components/book";
 import Topics from "../components/topics";
 import Email from "../components/email";
+import Testimonial from "../components/testimonial";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <Hero />
       <Book />
       <Topics />
+      <Testimonial />
       <Email />
     </Layout>
   );

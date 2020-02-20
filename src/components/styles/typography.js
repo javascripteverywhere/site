@@ -27,8 +27,8 @@ const typography = css`
   }
 
   @font-face {
-    font-family: "Plex Regular";
-    src: url("./../fonts/ibmplexsans-regular-webfont.woff2") format("woff2"),
+    font-family: "Plex Italic";
+    src: url("./../fonts/ibmplexsans-italic-webfont.woff2") format("woff2"),
       url("./../fonts/ibmplexsans-regular-webfont.woff") format("woff");
     font-display: "swap";
   }
