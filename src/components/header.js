@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import logo from "../images/logo.svg";
@@ -21,11 +21,6 @@ const StyledHeader = styled.header`
 
 const Logo = styled.div`
   margin-left: 5%;
-`;
-
-const Title = styled.h1`
-  font-size: 1rem;
-  display: inline;
 `;
 
 const Header = ({ siteTitle, menuLinks }) => {

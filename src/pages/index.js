@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="JavaScript Everywhere"
+        title="JavaScript Everywhere Book — Learn JavaScript Application Development"
         keywords={[
           `book`,
           `node.js`,
@@ -20,7 +20,9 @@ const Index = () => {
           `express.js`,
           `apollo`,
           `react native`,
-          `electron`
+          `electron`,
+          `JavaScript`,
+          `application development`
         ]}
       />
       <Hero />
