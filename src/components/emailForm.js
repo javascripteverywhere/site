@@ -64,17 +64,12 @@ const EmailForm = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    setLoading(true);
+    setSubscribed(true);
+    const formElem = document.getElementById("signup");
 
     fetch("https://buttondown.email/api/emails/embed-subscribe/jseverywhere", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      body: qs.stringify({ email })
-    }).then(() => {
-      setSubscribed(true);
-      setLoading(false);
+      body: new FormData(formElem)
     });
   };
 
